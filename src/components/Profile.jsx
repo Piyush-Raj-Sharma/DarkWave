@@ -35,17 +35,17 @@ const Profile = () => {
       >
         <div style={{ marginBottom: '25px' }}>
           <strong style={{ display: 'block', color: '#aaaaaa' }}>Name:</strong>
-          <p style={{ fontSize: '16px' }}>Ujjwal Kumar</p>
+          <p style={{ fontSize: '16px' }}>Piyush Raj</p>
         </div>
 
         <div style={{ marginBottom: '25px' }}>
           <strong style={{ display: 'block', color: '#aaaaaa' }}>Email:</strong>
-          <p style={{ fontSize: '16px' }}>ujjwal@example.com</p>
+          <p style={{ fontSize: '16px' }}>piyush@example.com</p>
         </div>
 
         <div style={{ marginBottom: '25px' }}>
           <strong style={{ display: 'block', color: '#aaaaaa' }}>Location:</strong>
-          <p style={{ fontSize: '16px' }}>Patna, India</p>
+          <p style={{ fontSize: '16px' }}>Bangalore, India</p>
         </div>
 
         <div style={{ marginBottom: '25px' }}>
@@ -58,7 +58,7 @@ const Profile = () => {
         <div style={{ marginBottom: '0' }}>
           <strong style={{ display: 'block', color: '#aaaaaa' }}>About Me:</strong>
           <p style={{ fontSize: '16px', color: '#d0d0d0', lineHeight: '1.7' }}>
-            I'm Ujjwal Kumar, a passionate frontend developer who loves building clean and responsive UIs.
+            I'm Piyush Raj, a passionate frontend developer who loves building clean and responsive UIs.
             Currently exploring deeper into React.js and modern web practices. I'm dedicated to mastering my craft
             and aiming to secure a strong position in tech to support my family and career goals.
           </p>
