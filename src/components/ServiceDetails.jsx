@@ -9,24 +9,12 @@ const ServiceDetails = () => {
     <div
       style={{
         backgroundColor: '#1e1e2f',
-        maxHeight: '100vh',
+        Height: '100vh',
         padding: '40px 15px',
         color: '#ffffff',
         fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
       }}
     >
-      <h1
-        style={{
-          fontSize: '30px',
-          fontWeight: '600',
-          textAlign: 'center',
-          marginBottom: '30px',
-          letterSpacing: '0.5px',
-        }}
-      >
-        {name}
-      </h1>
-
       <div
         style={{
           maxWidth: '600px',
@@ -45,7 +33,7 @@ const ServiceDetails = () => {
             marginBottom: '25px',
           }}
         >
-          You're viewing details for the <strong>{params.name}</strong> service. This section can include key features, tools used, outcomes, and more insights. Adapt it as needed.
+          You're viewing details for the <strong>{params.serviceID}</strong> service. This section can include key features, tools used, outcomes, and more insights. Adapt it as needed.
         </p>
 
         <button

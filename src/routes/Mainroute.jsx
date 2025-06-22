@@ -17,7 +17,7 @@ const Mainroute = () => {
       <Route path="/product/details/:name" element={<ProductDetails />} />
       {/* This is a dynamic route for product details & :id is a parameter that can be accessed in ProductDetails component */}
       <Route path="/service" element={<Service />}>
-        <Route path="details/:name" element={<ServiceDetails />} /> {}
+        <Route path="details/:serviceID" element={<ServiceDetails />} />
       </Route>
       <Route path="/about" element={<About />} />
       <Route path="/profile" element={<Profile />} />

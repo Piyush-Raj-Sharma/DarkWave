@@ -92,7 +92,8 @@ const Product = () => {
             <h2 style={{ fontSize: "20px", marginBottom: "10px" }}>{product.name}</h2>
             <p style={{ fontSize: "14px", color: "#cccccc" }}>{product.description}</p>
             <button
-            onClick={() => navigateHandler(product)}
+            onClick={() => navigateHandler(product.name)}
+
               style={{
                 marginTop: "20px",
                 backgroundColor: "#ffffff",
