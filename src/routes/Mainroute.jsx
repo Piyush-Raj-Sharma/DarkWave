@@ -6,6 +6,7 @@ import Service from "../components/Service";
 import ServiceDetails from "../components/ServiceDetails";
 import ProductDetails from "../components/ProductDetails";
 import { Route, Routes } from "react-router-dom";
+import PageNotFound from "../components/PageNotFound";
 
 const Mainroute = () => {
   return (
@@ -20,6 +21,9 @@ const Mainroute = () => {
       </Route>
       <Route path="/about" element={<About />} />
       <Route path="/profile" element={<Profile />} />
+      <Route path="*" element={<PageNotFound />} />
+      {/* This is a catch-all route for any undefined paths */}
+      {/* You can create a PageNotFound component to handle this */}
     </Routes>
   );
 };

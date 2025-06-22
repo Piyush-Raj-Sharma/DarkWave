@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+
+   const navigate = useNavigate();
   return (
     <div
       style={{
@@ -84,7 +87,7 @@ const Home = () => {
 
       <div style={{ marginTop: '60px', textAlign: 'center' }}>
         <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          onClick={() => navigate('/service/Robotics')}
           style={{
             backgroundColor: '#ff69b4',
             color: '#1e1e2f',

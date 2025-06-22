@@ -33,58 +33,69 @@ const About = () => {
           boxShadow: '0 8px 25px rgba(0,0,0,0.4)',
         }}
       >
-        {/* Overview */}
+        {/* Who We Are */}
         <section style={{ marginBottom: '40px' }}>
-          <h2 style={{ fontSize: '28px', marginBottom: '16px', color: '#ffffff' }}>Who We Are</h2>
+          <h2 style={{ fontSize: '28px', marginBottom: '16px' }}>Who We Are</h2>
           <p style={{ fontSize: '17px', lineHeight: '1.8', color: '#d0d0d0' }}>
-            We are a team of engineers, designers, and dreamers dedicated to building elegant, modern, and high-performing web solutions.
-            Whether you need a sleek frontend UI or a robust backend system, we specialize in full-stack development using technologies like React, Node.js, and more.
+            We’re a passionate team of engineers, designers, and creators crafting clean, scalable, and innovative web applications. From sleek UI to solid backend systems, we deliver full-stack solutions powered by technologies like React, Node.js, and MongoDB.
           </p>
         </section>
 
-        {/* Mission */}
+        {/* Our Mission */}
         <section style={{ marginBottom: '40px' }}>
-          <h2 style={{ fontSize: '28px', marginBottom: '16px', color: '#ffffff' }}>Our Mission</h2>
+          <h2 style={{ fontSize: '28px', marginBottom: '16px' }}>Our Mission</h2>
           <p style={{ fontSize: '17px', lineHeight: '1.8', color: '#d0d0d0' }}>
-            Our mission is to deliver cutting-edge software that not only works but also wows. We aim to bridge the gap between design and code,
-            business and user, through thoughtfully crafted digital experiences.
+            Our mission is simple — build delightful user experiences with modern tools and timeless principles. We strive to connect creativity and logic, crafting digital products that make a difference.
           </p>
         </section>
 
         {/* What We Do */}
         <section style={{ marginBottom: '40px' }}>
-          <h2 style={{ fontSize: '28px', marginBottom: '16px', color: '#ffffff' }}>What We Do</h2>
-          <ul style={{ color: '#d0d0d0', fontSize: '17px', lineHeight: '1.8', paddingLeft: '20px' }}>
-            <li>💻 Build responsive & accessible web interfaces with React</li>
-            <li>⚙️ Develop scalable backend APIs using Node.js/Express</li>
-            <li>🎨 Design intuitive UI/UX experiences for web & mobile</li>
-            <li>🚀 Deploy and maintain cloud-hosted apps</li>
-            <li>🧠 Embrace clean code and best practices in every project</li>
+          <h2 style={{ fontSize: '28px', marginBottom: '16px' }}>What We Do</h2>
+          <ul style={{ fontSize: '17px', lineHeight: '1.8', color: '#d0d0d0', paddingLeft: '20px' }}>
+            <li>💻 Build responsive & accessible UIs with React</li>
+            <li>⚙️ Design scalable REST APIs with Node.js & Express</li>
+            <li>🎨 Create stunning UI/UX for web & mobile platforms</li>
+            <li>🚀 Deploy apps using cloud platforms like Vercel and Firebase</li>
+            <li>🧠 Maintain clean code, testing, and performance best practices</li>
           </ul>
         </section>
 
         {/* Technologies */}
         <section>
-          <h2 style={{ fontSize: '28px', marginBottom: '16px', color: '#ffffff' }}>Technologies We Love</h2>
+          <h2 style={{ fontSize: '28px', marginBottom: '16px' }}>Technologies We Love</h2>
           <div
             style={{
               display: 'flex',
               flexWrap: 'wrap',
-              gap: '16px',
+              gap: '14px',
               marginTop: '10px',
             }}
           >
-            {['React', 'Node.js', 'MongoDB', 'Express', 'Tailwind CSS', 'Figma', 'Firebase', 'GitHub'].map((tech, index) => (
+            {[
+              'React',
+              'Node.js',
+              'MongoDB',
+              'Express',
+              'Tailwind CSS',
+              'Figma',
+              'Firebase',
+              'GitHub',
+            ].map((tech, index) => (
               <span
                 key={index}
                 style={{
                   backgroundColor: '#3b3b4d',
-                  padding: '8px 16px',
+                  padding: '10px 18px',
                   borderRadius: '20px',
-                  fontSize: '14px',
+                  fontSize: '15px',
                   fontWeight: '500',
                   color: '#ffffff',
+                  transition: 'background 0.3s ease',
+                  cursor: 'default',
                 }}
+                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4c4c61')}
+                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#3b3b4d')}
               >
                 {tech}
               </span>
